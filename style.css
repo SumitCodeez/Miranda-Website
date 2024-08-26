@@ -1,0 +1,968 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  background-color: #222;
+  overflow: hidden;
+}
+#page-1 {
+  height: 120vh;
+  width: 100vw;
+  position: relative;
+  background-color: #c6beb5;
+  overflow: hidden;
+}
+#page-1 #nav-bar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid #222;
+}
+#page-1 #nav-bar img {
+  height: 24px;
+  width: 30%;
+}
+#page-1 #nav-bar h5 {
+  font-size: 15px;
+  font-weight: 100;
+  width: 30%;
+  font-family: Editorial New Light;
+  color: #4c4c4b;
+}
+#page-1 #nav-bar i {
+  width: 30%;
+  text-align: right;
+}
+#page-1 #elems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 51vh;
+  padding: 40px 60px;
+}
+#page-1 #elem1 {
+  width: 30%;
+  height: 100%;
+}
+#page-1 #elem1 #text-container .upper-text {
+  display: flex;
+  align-items: center;
+  margin-top: 1vw;
+  margin-bottom: 0.7vw;
+  gap: 0.6vw;
+}
+#page-1 #elem1 #text-container .upper-text img {
+  width: 6vw;
+  height: 4vh;
+  object-fit: cover;
+}
+#page-1 #elem1 #text-container .upper-text h2 {
+  font-size: 1.1vw;
+  font-family: "Canopee";
+  font-weight: 100;
+  background-color: #c4300e;
+  color: #d8d7d7;
+  padding: 0.3vw;
+  border-radius: 5px;
+}
+#page-1 #elem1 #text-container .lower-text p {
+  font-size: 1.1vw;
+  font-weight: 500;
+  font-family: Domaine Disp Cond Medium;
+  color: #41403c;
+}
+
+#page-1 #elem1 #image {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+#page-1 #elem1 #image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+  border: 1.5px solid black;
+}
+#image:hover img {
+  scale: 1.1;
+}
+#page-1 #elem2 {
+  width: 30%;
+  height: 100%;
+  padding: 20px 60px;
+  border-left: 2px solid #8e8e8e;
+  border-right: 2px solid #8e8e8e;
+  text-align: center;
+}
+#page-1 #elem2 h1 {
+  font-family: "Canopee";
+  font-size: 4.1vw;
+  font-weight: 500;
+  letter-spacing: -0.05rem;
+  margin-bottom: 1.5vw;
+}
+#page-1 #elem2 h3 {
+  font-family: Editorial New Light;
+  font-size: 2.4vw;
+  font-weight: 500;
+  margin-bottom: 1.5vw;
+  color: #282828;
+}
+#page-1 #elem2 h6 {
+  font-family: Editorial New Light;
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+#page-1 #elem2 h6 span {
+  font-size: 1.3vw;
+  font-family: "Canopee";
+}
+
+#page-1 #elem3 {
+  width: 30%;
+  height: 100%;
+}
+#page-1 #elem3 #text-container .upper-text {
+  display: flex;
+  align-items: center;
+  margin-top: 1vw;
+  margin-bottom: 0.7vw;
+  gap: 0.6vw;
+}
+#page-1 #elem3 #text-container .upper-text img {
+  width: 12vw;
+  height: 4vh;
+  object-fit: cover;
+}
+#page-1 #elem3 #text-container .upper-text h2 {
+  font-size: 1.1vw;
+  font-family: "Canopee";
+  font-weight: 100;
+  background-color: #c4300e;
+  color: #d8d7d7;
+  padding: 0.3vw;
+  border-radius: 5px;
+}
+#page-1 #elem3 #text-container .lower-text p {
+  font-size: 1.1vw;
+  font-weight: 500;
+  font-family: Domaine Disp Cond Medium;
+  color: #41403c;
+}
+#page-1 #elem3 #image {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+#page-1 #elem3 #image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+  border: 1.5px solid black;
+}
+#page-1 .tag {
+  font-size: 35.5vw;
+  letter-spacing: -20px;
+  background-color: #1c1c19;
+  color: #c2bbb1;
+  font-family: "Canopee";
+  font-weight: 100;
+  line-height: 30vw;
+  width: 96vw;
+  margin-left: 2vw;
+}
+#page-2 {
+  height: 160vh;
+  width: 100vw;
+  position: relative;
+  background-color: #c6beb5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vw 2.5vw;
+}
+#page-2 #page-left {
+  height: 100%;
+  width: 33%;
+  padding-right: 55px;
+  border-right: 1px solid #4b4b4b;
+}
+#page-2 #page-left h1 {
+  font-size: 6.5vw;
+  font-family: "Canopee";
+  line-height: 7.5vw;
+  font-weight: 500;
+  letter-spacing: -3px;
+  margin-bottom: 0.8vw;
+}
+#page-2 #page-left h1 span {
+  font-size: 11.2vw;
+  font-weight: 600;
+}
+#page-2 #page-left img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+#page-2 #page-left p {
+  font-size: 1.7vw;
+  font-family: Editorial New Light;
+  color: #2f2f2f;
+  margin-top: 1vw;
+  padding-right: 0.2vw;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+#page-2 #page-left p span {
+  font-size: 3.5vw;
+  background-color: black;
+  color: #c2bbb1;
+  font-weight: 900;
+}
+#page-2 #page-right {
+  height: 100%;
+  width: 65%;
+  padding-left: 40px;
+}
+#page-2 #page-right img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+#page-2 #page-right p {
+  font-size: 6.5vw;
+  font-family: "Canopee";
+  font-weight: 700;
+  color: #1c1c19;
+}
+#page-3 {
+  height: 200vh;
+  width: 100vw;
+  position: relative;
+  background-color: #c6beb5;
+}
+#page-3 #upper-content {
+  width: 100%;
+  height: 52vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 3vw;
+}
+#page-3 #upper-content h1 {
+  font-size: 25vw;
+  width: 71vw;
+  font-family: "Canopee";
+  font-weight: 600;
+  background-color: #1c1c19;
+  color: #c2bbb1;
+  padding: 0vw 2.2vw;
+  line-height: 24vw;
+  letter-spacing: 2px;
+}
+#page-3 #upper-content img {
+  height: 100%;
+  width: 20vw;
+  object-fit: cover;
+}
+#page-3 #lower-content {
+  width: 100%;
+  height: 148vh;
+  display: flex;
+  align-items: center;
+  padding: 0vw 2vw;
+  padding-top: 3.5vw;
+}
+#page-3 #lower-content #page-3-left {
+  width: 68%;
+  height: 100%;
+  border-right: 1.5px solid #4b4b4b;
+}
+#page-3 #lower-content #page-3-left .upper-part {
+  width: 90%;
+  height: 28%;
+  display: flex;
+}
+#page-3 #lower-content #page-3-left .upper-part #left {
+  width: 47%;
+  height: 100%;
+  border-right: 1px solid #4b4b4b;
+}
+#page-3 #lower-content #page-3-left .upper-part #left h1 {
+  font-size: 4vw;
+  font-family: "Canopee";
+  padding-bottom: 1.5vw;
+  font-weight: 600;
+}
+#page-3 #lower-content #page-3-left .upper-part #left h4 {
+  font-size: 2.5vw;
+  font-family: Editorial New Light;
+  padding-bottom: 1.5vw;
+  font-weight: 500;
+  line-height: 3vw;
+}
+#page-3 #lower-content #page-3-left .upper-part #left h5 {
+  font-size: 1.2vw;
+  font-family: Editorial New Light;
+  font-weight: 500;
+}
+#page-3 #lower-content #page-3-left .upper-part #left h5 span {
+  font-size: 1.4vw;
+  font-family: "Canopee";
+  font-weight: 600;
+}
+#page-3 #lower-content #page-3-left .upper-part #right {
+  width: 50%;
+  height: 100%;
+  padding: 0vw 3vw;
+}
+
+#page-3 #lower-content #page-3-left .upper-part #right #image3 {
+  width: 30vw;
+  height: 25vh;
+  overflow: hidden;
+  padding-bottom: 0.5vw;
+}
+#page-3 #lower-content #page-3-left .upper-part #right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+  border: 1.5px solid black;
+}
+#image3:hover img {
+  scale: 1.1;
+}
+#page-3 #lower-content #page-3-left .upper-part #right h1 {
+  font-family: "Canopee";
+  font-size: 2.2vw;
+  font-weight: 500;
+  letter-spacing: -1px;
+  padding-bottom: 0.5vw;
+}
+#page-3 #lower-content #page-3-left .upper-part #right p {
+  font-family: Editorial New Light;
+  font-size: 1.1vw;
+  color: #2f2e2e;
+  font-weight: 500;
+}
+#page-3 #lower-content #page-3-left .lower-part {
+  width: 100%;
+  height: 72%;
+  padding: 5vw 0vw;
+}
+#page-3 #lower-content #page-3-left .lower-part img {
+  width: 62vw;
+  height: 88vh;
+  object-fit: cover;
+}
+#page-3 #lower-content #page-3-right {
+  width: 30%;
+  height: 100%;
+  padding-left: 2vw;
+}
+#page-3 #lower-content #page-3-right h1 {
+  font-family: "Canopee";
+  font-size: 5.5vw;
+  font-weight: 600;
+  line-height: 8vw;
+}
+#page-3 #lower-content #page-3-right h1 span {
+  font-size: 11.1vw;
+  font-weight: 600;
+}
+#page-3 #lower-content #page-3-right p {
+  font-size: 1.7vw;
+  font-family: Editorial New Light;
+  color: #1c1b19;
+  margin-top: 4vw;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+#page-3 #lower-content #page-3-right p span {
+  font-size: 3vw;
+  background-color: black;
+  color: #c2bbb1;
+  font-weight: 900;
+}
+#page-3 #lower-content #page-3-right h6 {
+  font-size: 1.7vw;
+  font-family: Editorial New Light;
+  color: #1c1b19;
+  margin-top: 4vw;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+#page-3 #lower-content #page-3-right #box {
+  width: 100%;
+  height: 23vh;
+  border-radius: 50%;
+  background-color: #c9c0b5;
+  border: 1px solid #2f2f2fc6;
+  margin-top: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+#page-3 #lower-content #page-3-right #box h1 {
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-20%);
+  transition: all ease 0.6s;
+}
+#page-3 #lower-content #page-3-right #box img {
+  height: 5vh;
+  transform: translateX(-120%);
+  transition: all ease 0.6s;
+}
+#page-3 #lower-content #page-3-right #box:hover {
+  cursor: grab;
+}
+#page-3 #lower-content #page-3-right #box:hover img {
+  transform: translateX(105%);
+}
+#page-3 #lower-content #page-3-right #box:hover h1 {
+  transform: translateX(120%);
+}
+#empty {
+  width: 100vw;
+  height: 8.5vh;
+  background-color: #c6beb5;
+  position: relative;
+}
+#award {
+  height: 30vh;
+  width: 100vw;
+  position: relative;
+  background-color: #c6beb5;
+  border-top: 1.5px solid #4b4b4b;
+  border-bottom: 1.5px solid #4b4b4b;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#award #section1 {
+  display: flex;
+  align-items: center;
+}
+#award #section2 {
+  display: flex;
+  align-items: center;
+}
+#award #section3 {
+  display: flex;
+  align-items: center;
+}
+#award #section4 {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+}
+#award .text {
+  display: flex;
+  flex-direction: column;
+}
+#award .text h2 {
+  font-family: Editorial New Medium;
+  font-size: 1.5vw;
+  font-weight: 500;
+  padding-right: 1vw;
+}
+#award .text h1 {
+  font-family: "Canopee";
+  font-size: 4vw;
+  font-weight: 600;
+}
+#award .number {
+  font-family: "Canopee";
+  font-size: 10vw;
+}
+#page-4 {
+  height: 212vh;
+  width: 100vw;
+  position: relative;
+  background-color: #c6beb5;
+  padding: 4.5vw 2vw;
+}
+#page-4 #first-part {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+#page-4 #first-part #left-side1 {
+  width: 50vw;
+  height: 100%;
+}
+#page-4 #first-part #left-side1 #up {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+#page-4 #first-part #left-side1 #up img {
+  width: 14vw;
+  height: 47vh;
+  object-fit: cover;
+  border: 1px solid black;
+}
+#page-4 #first-part #left-side1 #up h1 {
+  font-family: "Canopee";
+  font-size: 32.5vw;
+  font-weight: 500;
+  color: #1c1b19;
+  letter-spacing: -19px;
+}
+#page-4 #first-part #left-side1 #low {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2vw;
+}
+#page-4 #first-part #left-side1 #low h1 {
+  font-family: "Canopee";
+  font-size: 31vw;
+  font-weight: 500;
+  color: #1c1b19;
+  letter-spacing: -19px;
+}
+
+#page-4 #first-part #right-side1 {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 4.5vw;
+}
+#page-4 #first-part #right-side1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+#page-4 #second-part {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#page-4 #second-part #left-side2 {
+  width: 30%;
+  height: 100%;
+}
+#page-4 #second-part #right-side2 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 7.5vw;
+}
+#page-4 #second-part #left-side2 img {
+  width: 27vw;
+  height: 45vh;
+  object-fit: cover;
+  border: 1px solid black;
+}
+#page-4 #second-part #right-side2 h1 {
+  font-family: "Canopee";
+  font-size: 27vw;
+  font-weight: 500;
+  color: #1c1b19;
+  letter-spacing: -19px;
+}
+#page-4 #third-part {
+  width: 100vw;
+  height: 55vh;
+  display: flex;
+}
+#page-4 #third-part #left-side3 {
+  width: 65%;
+  height: 100%;
+}
+#page-4 #third-part #left-side3 h1 {
+  font-size: 27vw;
+  letter-spacing: -20px;
+  background-color: #1c1c19;
+  color: #c2bbb1;
+  font-family: "Canopee";
+  font-weight: 100;
+  line-height: 23vw;
+  width: 100%;
+  padding: 0vw 2vw;
+}
+#page-4 #third-part #right-side3 {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  padding: 0vw 3vw;
+}
+#page-4 #third-part #right-side3 p {
+  font-family: Editorial New Light;
+  font-size: 1.6vw;
+  font-weight: 500;
+  color: #1c1c19;
+}
+#page-4 #third-part #right-side3 h1 {
+  font-family: "Canopee";
+  font-size: 6vw;
+  font-weight: 600;
+  color: #1c1c19;
+}
+#page-4 #third-part #right-side3 h4 {
+  font-family: Editorial New Light;
+  font-size: 1.7vw;
+  font-weight: 500;
+  color: #1c1c19;
+}
+#card-anim {
+  height: 70vh;
+  width: 100vw;
+  position: relative;
+  background-color: #c6beb5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#card-anim .card {
+  background-color: #C6BEB4;
+  width: 40vw;
+  height: 23vw;
+  border-radius: 3%;
+  border: 2.5px solid #282828;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transition: all ease 0.5s;
+}
+#card-anim .card:nth-child(1) {
+  left: 2%;
+}
+#card-anim .card:nth-child(2) {
+  left: 20%;
+}
+#card-anim .card:nth-child(3) {
+  left: 35%;
+}
+#card-anim .card:nth-child(4) {
+  left: 55%;
+}
+#card-anim .card:nth-child(1):hover {
+  z-index: 99;
+  background-color: #b6aca1;
+}
+#card-anim .card:nth-child(2):hover {
+  z-index: 99;
+  background-color: #b6aca1;
+}
+#card-anim .card:nth-child(3):hover {
+  z-index: 99;
+  background-color: #b6aca1;
+}
+#card-anim .card:nth-child(4):hover {
+  background-color: #b6aca1;
+}
+#card-anim .card .text-box {
+  width: 38vw;
+  height: 21vw;
+  border-radius: 3%;
+  border: 3px dashed #4b4b4b;
+  padding: 1.5vw;
+}
+#card-anim .card .text-box p {
+  text-decoration: underline;
+  color: #272523;
+  font-size: 1.5vw;
+  line-height: 2.2vw;
+}
+#card-anim .card .text-box .artist {
+  display: flex;
+  gap: 0.2vw;
+  padding-top: 7.5vw;
+}
+#card-anim .card .text-box .artist .img-div {
+  border-radius: 50%;
+  width: 3.2vw;
+  height: 3.2vw;
+}
+#card-anim .card .text-box .artist img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+#card-anim .card .text-box .details {
+  padding-left: 0.5vw;
+}
+#card-anim .card .text-box .details h1 {
+  font-family: "Canopee";
+  font-size: 1.6vw;
+  font-weight: 500;
+}
+#card-anim .card .text-box .details h2 {
+  font-family: Editorial New Medium;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #2f2f2f;
+}
+#footer-box {
+  height: 51vh;
+  width: 100vw;
+  position: relative;
+  background-color: #c6beb5;
+  border-bottom: 1px solid #1c1b19;
+  border-top: 1px solid #1c1b19;
+}
+#footer-box #areas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 51vh;
+  padding: 40px 60px;
+}
+#footer-box #area1 {
+  width: 30%;
+  height: 100%;
+}
+#footer-box #area1 #text-container1 .upper-text1 {
+  display: flex;
+  align-items: center;
+  margin-top: 1vw;
+  margin-bottom: 0.7vw;
+  gap: 0.6vw;
+}
+#footer-box #area1 #text-container1 .upper-text1 img {
+  width: 12vw;
+  height: 4vh;
+  object-fit: cover;
+}
+#footer-box #area1 #text-container1 .upper-text1 h2 {
+  font-size: 1.1vw;
+  font-family: "Canopee";
+  font-weight: 100;
+  background-color: #c4300e;
+  color: #d8d7d7;
+  padding: 0.3vw;
+  border-radius: 5px;
+}
+#footer-box #area1 #text-container1 .lower-text1 p {
+  font-size: 1.1vw;
+  font-weight: 500;
+  font-family: Domaine Disp Cond Medium;
+  color: #41403c;
+}
+
+#footer-box #area1 #image-box1 {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+#footer-box #area1 #image-box1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+  border: 1.5px solid black;
+}
+#image-box1:hover img {
+  scale: 1.1;
+}
+#footer-box #area2 {
+  width: 30%;
+  height: 100%;
+  padding: 10px 50px;
+  border-left: 2px solid #8e8e8e;
+  border-right: 2px solid #8e8e8e;
+  text-align: center;
+}
+#footer-box #area2 h1 {
+  font-family: "Canopee";
+  font-size: 4.1vw;
+  font-weight: 500;
+  letter-spacing: -0.05rem;
+  margin-bottom: 1.5vw;
+}
+#footer-box #area2 h3 {
+  font-family: Editorial New Light;
+  font-size: 2.4vw;
+  font-weight: 500;
+  margin-bottom: 1.5vw;
+  color: #282828;
+}
+#footer-box #area2 h6 {
+  font-family: Editorial New Light;
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+#footer-box #area2 h6 span {
+  font-size: 1.3vw;
+  font-family: "Canopee";
+}
+
+#footer-box #area3 {
+  width: 30%;
+  height: 100%;
+}
+#footer-box #area3 #text-container3 .upper-text3 {
+  display: flex;
+  align-items: center;
+  margin-top: 1vw;
+  margin-bottom: 0.7vw;
+  gap: 0.6vw;
+}
+#footer-box #area3 #text-container3 .upper-text3 img {
+  width: 10vw;
+  height: 5.8vh;
+  object-fit: cover;
+}
+#footer-box #area3 #text-container3 .upper-text3 h2 {
+  font-size: 1.1vw;
+  font-family: "Canopee";
+  font-weight: 100;
+  background-color: #c4300e;
+  color: #d8d7d7;
+  padding: 0.3vw;
+  border-radius: 5px;
+}
+#footer-box #area3 #text-container3 .lower-text3 p {
+  font-size: 1.1vw;
+  font-weight: 500;
+  font-family: Domaine Disp Cond Medium;
+  color: #41403c;
+}
+#footer-box #area3 #image-box3 {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+#footer-box #area3 #image-box3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+  border: 1.5px solid black;
+}
+#image-box3:hover img {
+  scale: 1.1;
+}
+#auto-anim {
+  padding: 2.6vw 0vw;
+  width: 100vw;
+  position: relative;
+  background-color: #c6beb5;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-bottom: 1px solid #1c1b19;
+}
+#auto-anim::-webkit-scrollbar {
+  display: none;
+}
+#auto-anim h1 {
+  font-size: 5vw;
+  font-family: Editorial New Medium;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 30px;
+  animation-name: anim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#auto-anim h1 span {
+  font-family: "Canopee";
+  background-color: #1c1b19;
+  color: #c2bbb1;
+  font-weight: 500;
+  letter-spacing: -2px;
+  padding: 0vw 1vw;
+}
+@keyframes anim {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 34px));
+  }
+}
+#auto-anim:hover h1 {
+  animation-play-state: paused;
+}
+
+#footer {
+  padding: 2vw 0vw;
+  height: 15vh;
+  width: 100vw;
+  position: relative;
+  background-color: #c6beb5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer #one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.6vw;
+  gap: 1vw;
+}
+#footer #one h2 {
+  font-family: "Canopee";
+  font-size: 2vw;
+  font-weight: 500;
+  color: #2b2a28;
+}
+#footer #one img {
+  width: 2.5vw;
+  height: 6vh;
+  object-fit: cover;
+}
+#footer #one h3 {
+  font-size: 1.3vw;
+  font-family: Editorial New Medium;
+  font-weight: 500;
+  color: #2b2a28;
+}
+#footer #two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2.5vw;
+  gap: 0.6vw;
+}
+#footer #two h2 {
+  font-family: "Canopee";
+  font-size: 1.6vw;
+  font-weight: 500;
+  color: #2b2a28;
+}
